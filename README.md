@@ -10,7 +10,7 @@ After using an Angular 1.5 Generator called [Angular-eggs](https://github.com/al
 
 I decided to implement the same structure they used, inside of the truffle framework.
 Angular Eggs uses Components rather than $scope and Controllers - and since Angular 2 is coming out, apparently
-developers are encouraged to start using Components wherever they can instead of directives, controllres, and $scope.
+developers are encouraged to start using Components wherever they can instead of directives, controllers, and $scope.
 
 This app therefore modifies my original Angular MetaCoin app so that all the Transaction code and UI is now in a "transactions" component.
 The app configuration, and also th home page itself are also in separate components.
