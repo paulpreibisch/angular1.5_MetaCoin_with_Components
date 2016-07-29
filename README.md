@@ -54,4 +54,4 @@ Note: If you get a port error, you can run truffle on a different port
 * Get angular-ui-router working
 * add a navbar
 ## License
-[MIT](https://github.com/paulpreibisch-io/angular_blockchain_marketplace/blob/master/LICENSE)
+[MIT](https://github.com/paulpreibisch/paulpreibisch.github.io/blob/master/MIT.md)
