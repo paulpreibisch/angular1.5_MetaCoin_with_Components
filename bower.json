@@ -1,0 +1,27 @@
+{
+  "name": "angular1.5_MetaCoin_with_Components",
+  "homepage": "https://github.com/paulpreibisch/angular1.5_MetaCoin_with_Components",
+  "authors": [
+    "fire <fire@b3dmultitech.com>"
+  ],
+  "description": "An example Angular 1.5 app with components in the truffle framework",
+  "main": "",
+  "keywords": [
+    "truffle",
+    "angular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.3.1",
+    "crypto-js": "^3.1.6",
+    "angular": "^1.5.8"
+  }
+}
