@@ -27,11 +27,14 @@ Paul @fire
 * [Bower](https://bower.io/)
 
 ## Build
-Before you are able to run the Angular app, you will need run the following
-* cd truffle/app
-* bower install
+Before you are able to run the Angular app, you will need make sure that its dependencies have been properly installed
+ to do that, you can use the bower package manager. All the dependencies are in bower.json in the main project folder
+  
+so simply run the following:
+* <code>bower install</code>
 
-This will install all the angular dependencies in truffle/app/bower_components 
+This will install all the angular dependencies in /bower_components
+ This folder is ignored by git since the bower package manager takes care of the installation.
 
 ## Run
 To run
