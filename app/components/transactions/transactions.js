@@ -1,10 +1,10 @@
 (function () {
-/**
- * Sha Components module.
- *
- * @module myAngular15App.components.sha
- */
-'use strict';
+    /**
+     * transactions Components module.
+     *
+     * @module metaCoinApp.components.transactions
+     */
+    'use strict';
     angular
         .module('metaCoinApp.components.transactions', [])
         .component('transactions', {
@@ -21,7 +21,7 @@
         ctrl.receiver = "";
         ctrl.$timeout = $timeout;
         ctrl.balance = 0;
-        web3.eth.getAccounts(function(err, accs) {
+        web3.eth.getAccounts(function (err, accs) {
             if (err != null) {
                 alert("There was an error fetching your accounts.");
                 return;
@@ -38,6 +38,7 @@
             ctrl.refreshBalance();
         });
     }
+
     Controller.$inject = ['$timeout'];
     Controller.prototype.refreshBalance = function () {
         var meta = MetaCoin.deployed();
@@ -53,19 +54,16 @@
         });
     };
 
-    Controller.prototype.sendCoin = function (amount, receiver) {
+    Controller.prototype.sendCoin = function () {
         // Remove the 2 lines that pick amount and receiver from the DOM.
         console.log('sending coin');
         var meta = MetaCoin.deployed();
-        var amount = parseInt(this.amount);
-        var receiver = this.receiver;
-
         alert("Initiating transaction... (please wait)");
-
-        meta.sendCoin(receiver, amount, {from: this.account}).then(function() {
-            alert("Transaction complete!");
-            this.refreshBalance();
-        }).catch(function(e) {
+        meta.sendCoin(this.receiver, parseInt(amount), {from: this.account}).then(
+            function () {
+                alert("Transaction complete!");
+                this.refreshBalance();
+            }).catch(function (e) {
             console.log(e);
             alert("Error sending coin; see log.");
         });
