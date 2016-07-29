@@ -9,7 +9,7 @@
     .module('metaCoinApp.components.home', [])
     .component('home', {
       controller: Controller,
-      templateUrl: 'javascripts/components/home/home.html',
+      templateUrl: 'components/home/home.html',
       $canActivate: $canActivate
     });
 

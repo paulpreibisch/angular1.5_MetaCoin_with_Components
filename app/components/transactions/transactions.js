@@ -9,7 +9,7 @@
         .module('metaCoinApp.components.transactions', [])
         .component('transactions', {
             controller: Controller,
-            templateUrl: 'javascripts/components/transactions/transactions.html',
+            templateUrl: 'components/transactions/transactions.html',
             $canActivate: $canActivate
         });
 

@@ -1,26 +1,18 @@
 module.exports = {
   build: {
     "index.html": "index.html",
-    "javascripts/components/footer/footer.html":"javascripts/components/footer/footer.html",
-    "javascripts/components/header/header.html": "javascripts/components/header/header.html",
-    "javascripts/components/transactions/transactions.html": "javascripts/components/transactions/transactions.html",
-    "javascripts/components/home/home.html": "javascripts/components/home/home.html",
-    // "javascripts/_vendor/angular.js":"javascripts/_vendor/angular.js",
-    // "javascripts/_vendor/crypto-js.js":"../bower_components/crypto-js/crypto-js.js",
-    // "javascripts/_vendor/angular-ui-router.js":"javascripts/_vendor/angular-ui-router.js",
-    // "javascripts/components/transactions/transactions.js": "javascripts/components/transactions/transactions.js",
-    // "javascripts/components/home/home.js": "javascripts/components/home/home.js",
-    // "javascripts/config.js": "javascripts/config.js",
-    // "javascripts/main.js": "javascripts/main.js",
-
+    "components/footer/footer.html":"components/footer/footer.html",
+    "components/header/header.html": "components/header/header.html",
+    "components/transactions/transactions.html": "components/transactions/transactions.html",
+    "components/home/home.html": "components/home/home.html",
     "app.js":[
-      "javascripts/_vendor/angular.js",
+      "../bower_components/angular/angular.js",
     "../bower_components/crypto-js/crypto-js.js",
-    "javascripts/_vendor/angular-ui-router.js",
-    "javascripts/components/transactions/transactions.js",
-    "javascripts/components/home/home.js",
-    "javascripts/config.js",
-    "javascripts/main.js",
+    "../bower_components/angular-ui-router/release/angular-ui-router.js",
+    "components/transactions/transactions.js",
+    "components/home/home.js",
+    "config.js",
+    "main.js",
     ],
 
     "app.css": [
